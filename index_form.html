@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      text-align: center;
+      color: purple;
+    }
+    form {
+      width: 450px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+    }
+    td {
+      padding: 5px;
+      vertical-align: top;
+    }
+    input[type="text"], select, textarea {
+      width: 95%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: none;
+      height: 60px;
+    }
+    .btn {
+      margin-top: 10px;
+      text-align: center;
+    }
+    input[type="submit"], input[type="reset"] {
+      padding: 5px 15px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Free Registration</h2>
+
+  <form>
+    <table>
+      <tr>
+        <td>Nama</td>
+        <td>: <input type="text" name="nama"></td>
+      </tr>
+      <tr>
+        <td>Tgl Lahir</td>
+        <td>: <input type="text" name="tgl" size="2"> / 
+               <input type="text" name="bln" size="2"> / 
+               <input type="text" name="thn" size="4"></td>
+      </tr>
+      <tr>
+        <td>Alamat</td>
+        <td>: <textarea name="alamat"></textarea></td>
+      </tr>
+      <tr>
+        <td>Kota</td>
+        <td>: <input type="text" name="kota"></td>
+      </tr>
+      <tr>
+        <td>Pekerjaan</td>
+        <td>:
+          <select name="pekerjaan">
+            <option value="Tani">Tani</option>
+            <option value="Guru">Guru</option>
+            <option value="Dokter">Dokter</option>
+            <option value="Programmer">Programmer</option>
+            <option value="Wirausaha">Wirausaha</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>:
+          <input type="radio" name="gender" value="Laki-laki"> Laki-Laki
+          <input type="radio" name="gender" value="Perempuan"> Perempuan
+        </td>
+      </tr>
+      <tr>
+        <td>Hobby</td>
+        <td>:
+          <input type="checkbox" name="hobby" value="Reading"> Reading<br>
+          <input type="checkbox" name="hobby" value="Sport"> Sport<br>
+          <input type="checkbox" name="hobby" value="Singing"> Singing<br>
+          <input type="checkbox" name="hobby" value="Traveling"> Traveling
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="btn" align="center">
+          <input type="submit" value="Kirim">
+          <input type="reset" value="Cancel">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
